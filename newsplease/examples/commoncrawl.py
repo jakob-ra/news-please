@@ -47,11 +47,11 @@ my_local_download_dir_article = './cc_download_articles/'
 # hosts (if None or empty list, any host is OK)
 my_filter_valid_hosts = []  # example: ['elrancaguino.cl']
 # start date (if None, any date is OK as start date), as datetime
-my_filter_start_date = datetime.datetime(2020, 1, 1)
+my_filter_start_date = datetime.datetime(2021, 1, 1)
 # end date (if None, any date is OK as end date), as datetime
-my_filter_end_date = datetime.datetime(2020, 1, 2)
+my_filter_end_date = datetime.datetime(2021, 1, 2)
 # if date filtering is strict and news-please could not detect the date of an article, the article will be discarded
-my_warc_files_start_date = datetime.datetime(2020, 1, 1) # example: datetime.datetime(2020, 3, 1)
+my_warc_files_start_date = datetime.datetime(2021, 1, 1) # example: datetime.datetime(2020, 3, 1)
 my_filter_strict_date = True
 # if True, the script checks whether a file has been downloaded already and uses that file instead of downloading
 # again. Note that there is no check whether the file has been downloaded completely or is valid!
@@ -59,13 +59,13 @@ my_reuse_previously_downloaded_files = True
 # continue after error
 my_continue_after_error = True
 # show the progress of downloading the WARC files
-my_show_download_progress = False
+my_show_download_progress = True
 # log_level
-my_log_level = logging.INFO
+my_log_level = logging.ERROR
 # json export style
 my_json_export_style = 1  # 0 (minimize), 1 (pretty)
 # number of extraction processes
-my_number_of_extraction_processes = 1
+my_number_of_extraction_processes = -1
 # if True, the WARC file will be deleted after all articles have been extracted from it
 my_delete_warc_after_extraction = True
 # if True, will continue extraction from the latest fully downloaded but not fully extracted WARC files and then
