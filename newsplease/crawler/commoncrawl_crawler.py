@@ -23,7 +23,7 @@ __copyright__ = "Copyright 2017"
 __credits__ = ["Sebastian Nagel"]
 
 # commoncrawl.org
-__cc_base_url = 'https://commoncrawl.s3.amazonaws.com/'
+__cc_base_url = 's3://commoncrawl/'
 
 # log file of fully extracted WARC files
 __log_pathname_fully_extracted_warcs = None
